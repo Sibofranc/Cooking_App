@@ -9,7 +9,7 @@
       Title="MyFavourites">
 
     <Grid Background="White">
-        <Grid.RowDefinitions Height="75" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
             <RowDefinition Height="15*"/>
             <RowDefinition Height="75*"/>
         </Grid.RowDefinitions>

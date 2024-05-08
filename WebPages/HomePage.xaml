@@ -9,13 +9,67 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="HomePage">
 
-    <Grid Background="White">
 
+    <Grid Background="White">
+        <!--Main frame to load pages onto-->
+        <Frame Grid.ColumnSpan="2" x:Name="homeMainFrame"/>
+        
+        <!--Navigation menu-->
         <userControls:MenuBarView Grid.Column="0"/>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="35*"/>
-            <ColumnDefinition Width="85*"/>
-        </Grid.ColumnDefinitions>
+        
+        <!--Grid division for better design aid-->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35*"/>
+                <ColumnDefinition Width="85*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        
+        <!--Secondary frame to load search results onto-->
+        <Frame Grid.Column="1" x:Name="searchResultFrame"/>
+        
+        <!--Search box and button-->
+        <TextBox Grid.Column="1" Height="29" Width="180" VerticalAlignment="Top"
+              HorizontalAlignment="Right" Margin="0,8,47,0"/>
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" 
+             Height="25" Width="30" Grid.Column="1" Margin="0,10,15,0">
+            <Button.Background>
+                <ImageBrush ImageSource="{Binding SearchPic}"/>
+            </Button.Background>
+        </Button>
+        
+        <!--Stack panel to hold main display and recipes-->
+        <StackPanel Orientation="Vertical" Margin="235,55,10,10">
+            <Label Content="Daily Recommendations" Height="40" Width="250" FontSize="20" 
+                        FontWeight="Bold" FontFamily="Georgia Pro Semibold" />
+            <StackPanel Height="140" Orientation="Horizontal" Margin="0,10,0,0">
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                               Width="180" Fill="#FFE2E2E2" 
+                               Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                               Width="180" Fill="#FFE2E2E2" 
+                               Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                               Width="180" Fill="#FFE2E2E2" 
+                               Margin="0,0,0,0"/>
+            </StackPanel>
+            <Label Content="Categories" Height="40" Width="250" FontSize="20" 
+                       FontWeight="Bold" FontFamily="Georgia Pro Semibold" />
+            <StackPanel Height="140" Orientation="Horizontal" Margin="0,10,0,0" >
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                               Width="180" Fill="#FFE2E2E2" 
+                               Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                               Width="180" Fill="#FFE2E2E2" 
+                               Margin="0,0,5,0"/>
+                <Rectangle Height="140" RadiusX="15" RadiusY="15" 
+                               Width="180" Fill="#FFE2E2E2" 
+                               Margin="0,0,0,0"/>
+            </StackPanel>
+
+        </StackPanel>
+
+
 
     </Grid>
 </Page>

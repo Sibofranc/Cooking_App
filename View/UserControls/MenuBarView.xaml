@@ -5,27 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Cooking_App.View.UserControls"
              mc:Ignorable="d" 
-             Height="450" Width="800">
-    <Grid Background="White">
-        <Grid>
-            <Grid.RowDefinitions Height="75">
-                <RowDefinition Height="25*"/>
-                <RowDefinition Height="75*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions >
-                <ColumnDefinition Width="30*"/>
-                <ColumnDefinition Width="75*"/>
-            </Grid.ColumnDefinitions>
-            <Menu HorizontalAlignment="Left" Height="331"  VerticalAlignment="Stretch" Width="175" Grid.Column="0" Grid.Row="1" Margin="35,0,0,0">
-                <Button Content="Profile" Height="39" Width="159" Click="ProfileBtn_Click"/>
-                <Button Content="My Fridge" Height="39" Width="159" Click="MyFridge_Click"/>
-                <Button Content="My favourites" Height="39" Width="159" Click="Myfavourites_Click"/>
-                <Button Content="Add recipe" Height="39" Width="159" Click="AddRecipe_Click"/>
-                <Button Content="FAQs" Height="39" Width="159" Click="FAQs_Click"/>
-                <Button Content="Settings" Height="39" Width="159" Click="Settings_Click"/>
-                <Button Content="About Us" Height="39" Width="159" Click="AboutUsBtn_Click"/>
-                <Button Content="Reviews" Height="39" Width="159" Click="ReviewsBtn_Click"/>
-            </Menu>
-        </Grid>
+             d:DesignHeight="450" d:DesignWidth="225">
+    
+    <Grid Background="White" HorizontalAlignment="Left" Width="225">
+        <Menu HorizontalAlignment="Left" Height="331" Width="175" Margin="25,70,0,0">
+            <Button Content="Profile" Height="39" Width="159" Click="Profile_Click" Tag="prof"/>
+            <Button Content="My Fridge" Height="39" Width="159" Click="MyFridge_Click" Tag="fridge"/>
+            <Button Content="My favourites" Height="39" Width="159" Click="Myfavourites_Click" Tag="fav"/>
+            <Button Content="Add recipe" Height="39" Width="159" Click="AddRecipe_Click" Tag="addRecipe"/>
+            <Button Content="FAQs" Height="39" Width="159" Click="FAQs_Click" Tag="faqs"/>
+            <Button Content="Settings" Height="39" Width="159" Click="Settings_Click" Tag="stngs"/>
+            <Button Content="About Us" Height="39" Width="159" Click="AboutUs_Click" Tag="abt"/>
+            <Button Content="Reviews" Height="39" Width="159" Click="Reviews_Click" Tag="revs"/>
+        </Menu>
+        
+        
     </Grid>
 </UserControl>

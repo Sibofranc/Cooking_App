@@ -21,8 +21,12 @@
             </Grid.ColumnDefinitions>
 
             <Ellipse Width="100" Height="100" VerticalAlignment="Top" 
-                     Margin="0,15,0,0" Stroke="Black"/>
-            
+                     Margin="0,15,0,0" Stroke="Black">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="{Binding ProfilePic}"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
             <Button Grid.Column="0" Height="25" Width="80" 
                     Margin="0,135,0,0" VerticalAlignment="Top"
                     Content="Edit Picture" x:Name="EditPic" 

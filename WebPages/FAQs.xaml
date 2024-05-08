@@ -21,11 +21,12 @@
             </Grid.ColumnDefinitions>
             <ListView Grid.Column="1" x:Name="viewReviewsEntry" SelectionChanged="viewReviewsEntry_SelectionChanged"/>
             <TextBox Grid.Column="2" Width="Auto" Height="90" Margin="5,5,5,0" VerticalAlignment="Top" 
-                     TextChanged="TextBox_TextChanged"/>
-            <Button x:Name="EditReview" Content="Edit your review" Height="30" Width="80" Grid.Column="2" 
-                    VerticalAlignment="Top" Margin="5,100,0,0" HorizontalAlignment="Left" Click="EditReview_Click"/>
-            <Button x:Name="PostReview" Content="Post your review" Height="30" Width="80" Grid.Column="2" 
-                    VerticalAlignment="Top" Margin="90,100,0,0" HorizontalAlignment="Left" Click="PostReview_Click"/>
+                     TextChanged="TextBox_TextChanged" TextWrapping="Wrap" AcceptsReturn="True"/>
+            <Button x:Name="EditReview" Content="Ask a Question" Height="30" 
+                    Width="95" Grid.Column="2" 
+                    VerticalAlignment="Center" HorizontalAlignment="Center" 
+                    Click="EditReview_Click"/>
+            
             
         </Grid>
         

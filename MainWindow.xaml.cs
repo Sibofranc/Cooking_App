@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using Cooking_App.WebPages;
 
 namespace Cooking_App
 {
@@ -11,12 +12,12 @@ namespace Cooking_App
 
         private void HomePage_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.Content = new WebPages.HomePage();
+            mainFrame.Content = new HomePage();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            mainFrame.Content = new WebPages.MyFrdge();
+            mainFrame.Content = new MyFrdge();
         }
     }
 }

@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace Cooking_App.WebPages
 {
-    /// <summary>
-    /// Interaction logic for FAQs.xaml
-    /// </summary>
     public partial class FAQs : Page
     {
         public FAQs()
