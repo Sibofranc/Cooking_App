@@ -18,7 +18,7 @@ namespace Cooking_App.WebPages
 
         private void MenuBarView_ButtonClicked(object sender, string pageName)
         {
-            /*switch(pageName)
+            switch(pageName)
             {
                 case "prof":
                     homeMainFrame.Navigate(new Uri("UserProfilePage.xaml", UriKind.Relative));
@@ -51,7 +51,7 @@ namespace Cooking_App.WebPages
                 case "revs":
                     homeMainFrame.Navigate(new Uri("Reviews.xaml", UriKind.Relative));
                     break;
-            }*/
+            }
         }
 
 
