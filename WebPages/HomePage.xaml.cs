@@ -21,31 +21,31 @@ namespace Cooking_App.WebPages
             switch(pageName)
             {
                 case "prof":
-                    homeMainFrame.Navigate(new Uri("UserProfilePage.xaml", UriKind.Relative));
+                    homeMainFrame.Content = new UserProfilePage();
                     break;
 
                 case "fridge":
-                    homeMainFrame.Navigate(new Uri("MyFridge.xaml", UriKind.Relative));
+                    homeMainFrame.Content = new MyFrdge();
                     break;
 
                 case "fav":
-                    homeMainFrame.Navigate(new Uri("MyFavourites.xaml", UriKind.Relative));
+                    homeMainFrame.Content = new MyFavourites();
                     break;
 
                 case "addRecipe":
-                    homeMainFrame.Navigate(new Uri("AddRecipe.xaml", UriKind.Relative));
+                    homeMainFrame.Content = new AddRecipe();
                     break;
 
                 case "faqs":
-                    homeMainFrame.Navigate(new Uri("FAQs.xaml", UriKind.Relative));
+                    homeMainFrame.Content = new FAQs();
                     break;
 
                 case "stngs":
-                    homeMainFrame.Navigate(new Uri("Settings.xaml", UriKind.Relative));
+                    homeMainFrame.Content = new Settings();
                     break;
 
                 case "abt":
-                    homeMainFrame.Navigate(new Uri("AboutUs.xaml", UriKind.Relative));
+                    homeMainFrame.Content = new UserProfilePage();
                     break;
 
                 case "revs":

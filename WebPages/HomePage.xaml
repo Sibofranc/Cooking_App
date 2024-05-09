@@ -12,7 +12,7 @@
 
     <Grid Background="White">
         <!--Main frame to load pages onto-->
-        <Frame Grid.ColumnSpan="2" x:Name="homeMainFrame"/>
+        <Frame Grid.ColumnSpan="2" x:Name="homeMainFrame" Panel.ZIndex="{Binding zIndex}"/>
         
         <!--Navigation menu-->
         <userControls:MenuBarView Grid.Column="0"/>
